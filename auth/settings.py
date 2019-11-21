@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'django.contrib.sites',
 
+    'fb',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -117,7 +118,6 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -162,7 +162,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -175,3 +175,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/'
